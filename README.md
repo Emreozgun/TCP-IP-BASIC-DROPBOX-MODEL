@@ -46,6 +46,7 @@
 ## Features
   ### Server Side 
  > server [directory] [threadPoolSize] [portnumber]
+ 
  > where the directory is the servers specific area for file operations (there shouldn’t be multiple servers running on the same directory in the same computer), threadPoolSize is the maximum number of threads active at a time (meaning maximum number of active connected clients), portnumber is the port server will wait for connection.
  
  > The server side is  backup the files of the client by mirroring. While the client is connected to the server,   modifications done to client’s directory (add, delete or modify file) also be done in the server side. Therefore, the two directories are consistent while the connection is active. The server is able to handle multiple clients at the same time (a multi-threaded internet server). The server is also log the create, delete and update operations of all files in a log file under the corresponding directory reserved for the client. 
