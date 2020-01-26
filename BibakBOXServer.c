@@ -115,7 +115,7 @@ int main(int argc, char **argv) {
 
 
 
-  struct argsServer = threadArgs[arguments.threadPoolsize];
+  struct argsServer threadArgs[arguments.threadPoolsize];
 
   while (main_exit == 0)
   {

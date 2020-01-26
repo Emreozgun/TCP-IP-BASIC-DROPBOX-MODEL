@@ -39,15 +39,12 @@ int main(int argc, char **argv) {
     exit(-1);
   }
 
-
-
-  struct sigaction a;
-  a.sa_handler = sig_handler;
-  a.sa_flags = 0;
-  sigemptyset( &a.sa_mask );
-  sigaction( SIGINT, &a, NULL );
-  sigaction( SIGTERM, &a, NULL );
-  sigaction( SIGPIPE, &a, NULL );
+  if (signal(SIGINT, sig_handler) == SIG_ERR)
+    printf("\ndidnt execute\n");
+  if (signal(SIGTERM, sig_handler) == SIG_ERR)
+    printf("\ndidnt execute 2\n");
+  if (signal(SIGPIPE, sig_handler) == SIG_ERR)
+    printf("\ndidnt execute 3\n");
 
   char realPath[PATH_MAX];
   realpath(argv[1], realPath);
