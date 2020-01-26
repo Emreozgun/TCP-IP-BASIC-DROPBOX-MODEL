@@ -17,10 +17,6 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ![Badges](https://img.shields.io/badge/open-source-blueviolet.svg)
 
-***SOME PICTURE FROM SHELL***
-
-![Screenshot from 2020-01-21 18-42-31](https://user-images.githubusercontent.com/30092986/72819411-4470a400-3c7e-11ea-9318-5e1f3927d31e.png)
-
 ---
 
 ## Table of Contents
